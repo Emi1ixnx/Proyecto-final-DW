@@ -1,0 +1,122 @@
+.p{
+    color: #E2E8F0;
+}
+
+.navbarlogo {
+    height: 50px; /* Ajusta la altura según tus necesidades */
+    width: auto;  /* Mantiene la proporción de la imagen */
+}
+
+video {
+    width: 100%;
+    max-height: 400px; /* Ajusta la altura máxima según tus necesidades */
+    object-fit: cover; /* Asegura que el video cubra el área sin distorsionarse */
+    display: block;
+    margin: 0 auto; /* Centra el video horizontalmente */
+}
+
+@media (min-width: 992px) {
+    .navbar .container-fluid {
+        position: relative;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        left: 1rem;
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+    }
+}
+
+/* 1. Definición de tu paleta de colores */
+:root {
+    --bg-principal: #0F172A;      /* Azul marino muy oscuro */
+    --bg-superficies: #1E293B;    /* Gris azulado (cards, navbar, formularios) */
+    --acento-principal: #3B82F6;  /* Azul (botones, enlaces) */
+    --texto-principal: #E2E8F0;   /* Gris claro */
+    --texto-secundario: #94A3B8;  /* Gris medio */
+    --estado-online: #22C55E;     /* Verde */
+    --estado-alerta: #F59E0B;     /* Ámbar */
+    --estado-offline: #EF4444;    /* Rojo */
+}
+
+/* 2. Fondo general y color de texto de toda la página */
+body {
+    background-color: var(--bg-principal);
+    color: var(--texto-principal);
+}
+
+/* 3. Barra de navegación (sobrescribe el gris claro de Bootstrap) */
+.navbar {
+    background-color: var(--bg-superficies) !important;
+    border-bottom: 1px solid #334155;
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--texto-principal) !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--acento-principal) !important;
+}
+
+/* 4. Cards y Formularios */
+.card,
+.solicitudes form {
+    background-color: var(--bg-superficies);
+    color: var(--texto-principal);
+    border: 1px solid #334155;
+}
+
+/* Inputs, selects y textareas del formulario */
+.form-control,
+.form-select {
+    background-color: var(--bg-principal);
+    color: var(--texto-principal);
+    border: 1px solid #334155;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--bg-principal);
+    color: var(--texto-principal);
+    border-color: var(--acento-principal);
+    box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
+}
+
+/* 5. Botones principales */
+.btn-primary {
+    background-color: var(--acento-principal);
+    border-color: var(--acento-principal);
+}
+
+/* 6. Clases útiles para los textos secundarios y estados */
+.texto-secundario {
+    color: var(--texto-secundario);
+}
+
+.estado-online {
+    background-color: var(--estado-online);
+    color: #0F172A;
+}
+
+.estado-alerta {
+    background-color: var(--estado-alerta);
+    color: #0F172A;
+}
+
+.estado-offline {
+    background-color: var(--estado-offline);
+    color: #FFFFFF;
+}
+img[alt="nexus_header"] {
+    width: 100%;
+    max-height: 290px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
