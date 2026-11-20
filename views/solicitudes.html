@@ -8,14 +8,15 @@
     <title>NexusTI - Solicitudes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
-    <link href="/assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
 
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/index.html"><img src="/assets/images/nexusti-logos/logo-horizontal-navbar.png" alt="NexusTI" id="navbarLogo"
+            <a class="navbar-brand" href="../index.html"><img
+                    src="../assets/images/nexusti-logos/logo-horizontal-navbar.png" alt="NexusTI" id="navbarLogo"
                     class="navbarlogo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,18 +25,109 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/index.html">INICIO</a>
+                        <a class="nav-link" href="../index.html">INICIO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="nodos.html">NODOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="solicitudes.html">SOLICITUDES</a>
+                        <a class="nav-link active" aria-current="page" href="solicitudes.html">SOLICITUDES</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div class="container">
+        <section id="solicitudes" class="solicitudes">
+            <h2>Solicitar un servidor</h2>
+            <form>
+
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" name="correo" required>
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label for="servidor" class="form-label">Servidor deseado</label>
+                        <select class="form-select" id="servidor" name="servidor" required>
+                            <option value="" selected>Elige un servidor</option>
+                            <option value="srv-web-01">srv-web-01 (9 GB libres)</option>
+                            <option value="srv-db-01">srv-db-01 (50 GB libres)</option>
+                            <option value="srv-cache-01">srv-cache-01 (6 GB libres)</option>
+                            <option value="srv-web-02">srv-web-02 (11 GB libres)</option>
+                            <option value="srv-db-02">srv-db-02 (40 GB libres)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="memoria" class="form-label">Memoria necesaria (GB)</label>
+                        <input type="number" class="form-control" id="memoria" name="memoria" min="1" max="128"
+                            required>
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-3">
+                    <fieldset class="col-md-6">
+                        <legend class="form-label fs-6">Tipo de uso</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="usoWeb" name="uso" value="web">
+                            <label class="form-check-label" for="usoWeb">Sitio o aplicación web</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="usoBd" name="uso" value="basedatos">
+                            <label class="form-check-label" for="usoBd">Base de datos</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="usoCache" name="uso" value="cache">
+                            <label class="form-check-label" for="usoCache">Caché</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="usoRespaldo" name="uso"
+                                value="respaldo">
+                            <label class="form-check-label" for="usoRespaldo">Respaldos</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="col-md-6">
+                        <legend class="form-label fs-6">Prioridad</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="prioridad" id="prioBaja" value="baja"
+                                checked>
+                            <label class="form-check-label" for="prioBaja">Baja</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="prioridad" id="prioMedia" value="media">
+                            <label class="form-check-label" for="prioMedia">Media</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="prioridad" id="prioAlta" value="alta">
+                            <label class="form-check-label" for="prioAlta">Alta</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="mb-3">
+                    <label for="descripcion" class="form-label">Descripción de la solicitud</label>
+                    <textarea class="form-control" id="descripcion" name="descripcion" rows="4"></textarea>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required>
+                    <label class="form-check-label" for="terminos">Acepto los términos de uso</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+            </form>
+        </section>
+    </div>
+
     <footer>
         <p>&copy; 2026 NexusTI</p>
     </footer>
