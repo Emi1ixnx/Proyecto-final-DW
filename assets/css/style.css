@@ -180,10 +180,20 @@ body::before {
 }
 
 .nosotros {
-    background-color: rgba(30, 41, 59, 0.85);
-    border-radius: 0.5rem;
-    padding: 1.5rem;
     margin-bottom: 3rem;
+}
+
+.nosotros .lead {
+    color: var(--texto-secundario);
+}
+
+.etiqueta {
+    color: var(--acento-principal);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
 }
 
 .texto-secundario {
@@ -203,4 +213,17 @@ img[alt="nexus_header"] {
     object-fit: cover;
     object-position: center;
     display: block;
+}
+
+.aviso-legal {
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+footer a {
+    color: var(--acento-principal);
+}
+
+footer a:hover {
+    color: var(--acento-hover);
 }
