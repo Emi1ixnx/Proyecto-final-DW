@@ -16,6 +16,19 @@ body {
     color: var(--texto-principal);
 }
 
+body {
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
 .video-fondo {
     position: fixed;
     top: 0;
@@ -226,4 +239,43 @@ footer a {
 
 footer a:hover {
     color: var(--acento-hover);
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.header>div {
+    animation: aparecer 0.8s ease-out both;
+}
+
+@keyframes pulso {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.6);
+    }
+
+    50% {
+        box-shadow: 0 0 0 6px rgba(239, 68, 68, 0);
+    }
+}
+
+.text-bg-danger {
+    animation: pulso 2s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
 }

@@ -7,38 +7,44 @@
     <title>NexusTI</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet" />
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/nexusti-logos/logo-horizontal-navbar.png"
-                    alt="NexusTI" id="navbarLogo" class="navbarlogo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="views/nodos.html">NODOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="views/solicitudes.html">SOLICITUDES</a>
-                    </li>
-                </ul>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img
+                        src="assets/images/nexusti-logos/logo-horizontal-navbar.png" alt="NexusTI" id="navbarLogo"
+                        class="navbarlogo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="views/nodos.html">NODOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="views/solicitudes.html">SOLICITUDES</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <video autoplay muted loop playsinline class="video-fondo" src="assets/videos/video2.mp4"></video>
 
-    <div class="container">
+    <main class="container">
         <section id="inicio" class="header">
             <div class="px-4 py-5 my-5 text-center">
                 <h1 class="display-5 fw-bold text-white">INFRAESTRUCTURA CLOUD Y REASENTAMIENTO DE NODOS</h1>
@@ -76,40 +82,40 @@
             <h2 class="text-center mb-4">Qué ofrece NexusTI</h2>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Monitoreo en tiempo real</h5>
+                            <h3 class="card-title h5">Monitoreo en tiempo real</h3>
                             <p class="card-text">Visualiza el estado de tus nodos y recursos de cómputo en tiempo
                                 real, con métricas precisas de disponibilidad, memoria y carga operativa.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Solicitud de recursos</h5>
+                            <h3 class="card-title h5">Solicitud de recursos</h3>
                             <p class="card-text">Pide memoria y servidores con un formulario claro, sin trámites
                                 largos.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Reasentamiento</h5>
+                            <h3 class="card-title h5">Reasentamiento</h3>
                             <p class="card-text">Mueve cargas de trabajo entre nodos cuando uno se llena o entra en
                                 mantenimiento.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Alertas tempranas</h5>
+                            <h3 class="card-title h5">Alertas tempranas</h3>
                             <p class="card-text">Detecta a tiempo los servidores con carga alta, antes de que
                                 fallen.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -119,17 +125,17 @@
             <div class="row text-center g-4">
                 <div class="col-md-4">
                     <p class="display-4 fw-bold mb-0 text-white">1</p>
-                    <h5 class="text-white">Consulta los nodos</h5>
+                    <h3 class="h5 text-white">Consulta los nodos</h3>
                     <p class="text-white">Revisa qué servidores están en línea y cuánta memoria tienen libre.</p>
                 </div>
                 <div class="col-md-4">
                     <p class="display-4 fw-bold mb-0 text-white">2</p>
-                    <h5 class="text-white">Elige tu servidor</h5>
+                    <h3 class="h5 text-white">Elige tu servidor</h3>
                     <p class="text-white">Escoge el que mejor se ajuste a lo que necesitas.</p>
                 </div>
                 <div class="col-md-4">
                     <p class="display-4 fw-bold mb-0 text-white">3</p>
-                    <h5 class="text-white">Envía tu solicitud</h5>
+                    <h3 class="h5 text-white">Envía tu solicitud</h3>
                     <p class="text-white">Llena el formulario y recibe la asignación de tus recursos.</p>
                 </div>
             </div>
@@ -147,7 +153,7 @@
 
             <div class="row g-4 mb-5">
                 <div class="col-md-6">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-body p-4">
                             <h3 class="etiqueta">Misión</h3>
                             <p class="card-text">Brindar a las organizaciones una interfaz intuitiva, precisa y
@@ -155,57 +161,57 @@
                                 para supervisar sus nodos activos y optimizar el despliegue de recursos de cómputo sin
                                 interrupciones operativas.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-6">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-body p-4">
                             <h3 class="etiqueta">Visión</h3>
                             <p class="card-text">Consolidarnos como el estándar de referencia en soluciones de monitoreo
                                 y orquestación de infraestructura híbrida y en la nube, impulsando entornos tecnológicos
                                 resilientes y escalables.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
 
             <h2 class="text-center mb-4">Nuestros valores</h2>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Control técnico</h5>
+                            <h3 class="card-title h5">Control técnico</h3>
                             <p class="card-text">La estabilidad nace de la visibilidad. Cada métrica y cada nodo ofrecen
                                 diagnósticos claros al instante.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Confiabilidad operativa</h5>
+                            <h3 class="card-title h5">Confiabilidad operativa</h3>
                             <p class="card-text">Priorizamos la continuidad del servicio, con detección temprana de
                                 alertas y redistribución eficiente de cargas.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Eficiencia y agilidad</h5>
+                            <h3 class="card-title h5">Eficiencia y agilidad</h3>
                             <p class="card-text">Reducimos la complejidad administrativa con flujos de solicitud claros
                                 que aceleran el aprovisionamiento.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Transparencia</h5>
+                            <h3 class="card-title h5">Transparencia</h3>
                             <p class="card-text">Fomentamos el uso responsable de estándares abiertos y buenas prácticas
                                 en cada capa de nuestra arquitectura.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -217,17 +223,19 @@
             <a href="views/solicitudes.html" class="btn btn-primary btn-lg px-4">Solicitar un servidor</a>
         </section>
 
-        <footer>
-            <p>&copy;NexusTI 2026</p>
-            <p class="aviso-legal">Construido con <a href="https://getbootstrap.com/" target="_blank"
-                    rel="noopener">Bootstrap</a>, software de código abierto bajo licencia <a
-                    href="https://opensource.org/license/mit" target="_blank" rel="noopener">MIT</a>.</p>
-            <p class="aviso-legal">Video de fondo: «Computadora, red, internet» de tommyvideo, en <a
-                    href="https://pixabay.com/es/videos/computadora-red-internet-digital-54733/" target="_blank"
-                    rel="noopener">Pixabay</a>, bajo la <a href="https://pixabay.com/es/service/license-summary/"
-                    target="_blank" rel="noopener">Licencia de contenido de Pixabay</a>.</p>
-        </footer>
-    </div>
+    </main>
+
+    <footer>
+        <p>&copy;NexusTI 2026</p>
+        <p class="aviso-legal">Construido con <a href="https://getbootstrap.com/" target="_blank"
+                rel="noopener">Bootstrap</a>, software de código abierto bajo licencia <a
+                href="https://opensource.org/license/mit" target="_blank" rel="noopener">MIT</a>.</p>
+        <p class="aviso-legal">Video de fondo: «Computadora, red, internet» de tommyvideo, en <a
+                href="https://pixabay.com/es/videos/computadora-red-internet-digital-54733/" target="_blank"
+                rel="noopener">Pixabay</a>, bajo la <a href="https://pixabay.com/es/service/license-summary/"
+                target="_blank" rel="noopener">Licencia de contenido de Pixabay</a>.</p>
+        <p class="aviso-legal">Tipografía: Inter, bajo licencia SIL Open Font.</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
         crossorigin="anonymous"></script>

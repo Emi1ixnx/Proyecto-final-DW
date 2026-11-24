@@ -8,44 +8,49 @@
     <title>NexusTI - Nodos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet" />
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img
-                    src="../assets/images/nexusti-logos/logo-horizontal-navbar.png" alt="NexusTI" id="navbarLogo"
-                    class="navbarlogo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="nodos.html">NODOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="solicitudes.html">SOLICITUDES</a>
-                    </li>
-                </ul>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img
+                        src="../assets/images/nexusti-logos/logo-horizontal-navbar.png" alt="NexusTI" id="navbarLogo"
+                        class="navbarlogo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nodos.html">NODOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="solicitudes.html">SOLICITUDES</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <div class="container">
+    <main class="container">
         <section id="nodos" class="nodos">
-            <h2>Nodos disponibles</h2>
+            <h1>Nodos disponibles</h1>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-header d-flex justify-content-between align-items-center">
-                            <span>srv-web-01</span>
+                            <h2 class="h5 mb-0">srv-web-01</h2>
                             <span class="badge text-bg-success">En línea</span>
                         </div>
                         <div class="card-body">
@@ -61,7 +66,7 @@
                                 data-bs-target="#modal-web01">Ver detalles</button>
                             <a href="solicitudes.html" class="btn btn-primary btn-sm">Solicitar</a>
                         </div>
-                    </div>
+                    </article>
                     <div class="modal fade" id="modal-web01" tabindex="-1" aria-labelledby="modal-web01-titulo"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
@@ -86,9 +91,9 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-header d-flex justify-content-between align-items-center">
-                            <span>srv-db-01</span>
+                            <h2 class="h5 mb-0">srv-db-01</h2>
                             <span class="badge text-bg-success">En línea</span>
                         </div>
                         <div class="card-body">
@@ -104,7 +109,7 @@
                                 data-bs-target="#modal-db01">Ver detalles</button>
                             <a href="solicitudes.html" class="btn btn-primary btn-sm">Solicitar</a>
                         </div>
-                    </div>
+                    </article>
                     <div class="modal fade" id="modal-db01" tabindex="-1" aria-labelledby="modal-db01-titulo"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
@@ -129,9 +134,9 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-header d-flex justify-content-between align-items-center">
-                            <span>srv-app-02</span>
+                            <h2 class="h5 mb-0">srv-app-02</h2>
                             <span class="badge text-bg-warning">Mantenimiento</span>
                         </div>
                         <div class="card-body">
@@ -147,7 +152,7 @@
                                 data-bs-target="#modal-app02">Ver detalles</button>
                             <a href="#" class="btn btn-secondary btn-sm disabled" aria-disabled="true">No disponible</a>
                         </div>
-                    </div>
+                    </article>
                     <div class="modal fade" id="modal-app02" tabindex="-1" aria-labelledby="modal-app02-titulo"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
@@ -172,9 +177,9 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-header d-flex justify-content-between align-items-center">
-                            <span>srv-cache-01</span>
+                            <h2 class="h5 mb-0">srv-cache-01</h2>
                             <span class="badge text-bg-success">En línea</span>
                         </div>
                         <div class="card-body">
@@ -190,7 +195,7 @@
                                 data-bs-target="#modal-cache01">Ver detalles</button>
                             <a href="solicitudes.html" class="btn btn-primary btn-sm">Solicitar</a>
                         </div>
-                    </div>
+                    </article>
                     <div class="modal fade" id="modal-cache01" tabindex="-1" aria-labelledby="modal-cache01-titulo"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
@@ -215,9 +220,9 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-header d-flex justify-content-between align-items-center">
-                            <span>srv-backup-01</span>
+                            <h2 class="h5 mb-0">srv-backup-01</h2>
                             <span class="badge text-bg-secondary">Fuera de línea</span>
                         </div>
                         <div class="card-body">
@@ -233,7 +238,7 @@
                                 data-bs-target="#modal-backup01">Ver detalles</button>
                             <a href="#" class="btn btn-secondary btn-sm disabled" aria-disabled="true">No disponible</a>
                         </div>
-                    </div>
+                    </article>
                     <div class="modal fade" id="modal-backup01" tabindex="-1" aria-labelledby="modal-backup01-titulo"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
@@ -258,9 +263,9 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-header d-flex justify-content-between align-items-center">
-                            <span>srv-api-03</span>
+                            <h2 class="h5 mb-0">srv-api-03</h2>
                             <span class="badge text-bg-danger">Alerta</span>
                         </div>
                         <div class="card-body">
@@ -276,7 +281,7 @@
                                 data-bs-target="#modal-api03">Ver detalles</button>
                             <a href="#" class="btn btn-secondary btn-sm disabled" aria-disabled="true">No disponible</a>
                         </div>
-                    </div>
+                    </article>
                     <div class="modal fade" id="modal-api03" tabindex="-1" aria-labelledby="modal-api03-titulo"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
@@ -301,9 +306,9 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-header d-flex justify-content-between align-items-center">
-                            <span>srv-web-02</span>
+                            <h2 class="h5 mb-0">srv-web-02</h2>
                             <span class="badge text-bg-success">En línea</span>
                         </div>
                         <div class="card-body">
@@ -319,7 +324,7 @@
                                 data-bs-target="#modal-web02">Ver detalles</button>
                             <a href="solicitudes.html" class="btn btn-primary btn-sm">Solicitar</a>
                         </div>
-                    </div>
+                    </article>
                     <div class="modal fade" id="modal-web02" tabindex="-1" aria-labelledby="modal-web02-titulo"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
@@ -344,9 +349,9 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-header d-flex justify-content-between align-items-center">
-                            <span>srv-db-02</span>
+                            <h2 class="h5 mb-0">srv-db-02</h2>
                             <span class="badge text-bg-success">En línea</span>
                         </div>
                         <div class="card-body">
@@ -362,7 +367,7 @@
                                 data-bs-target="#modal-db02">Ver detalles</button>
                             <a href="solicitudes.html" class="btn btn-primary btn-sm">Solicitar</a>
                         </div>
-                    </div>
+                    </article>
                     <div class="modal fade" id="modal-db02" tabindex="-1" aria-labelledby="modal-db02-titulo"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
@@ -387,9 +392,9 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <div class="card-header d-flex justify-content-between align-items-center">
-                            <span>srv-mail-01</span>
+                            <h2 class="h5 mb-0">srv-mail-01</h2>
                             <span class="badge text-bg-warning">Mantenimiento</span>
                         </div>
                         <div class="card-body">
@@ -405,7 +410,7 @@
                                 data-bs-target="#modal-mail01">Ver detalles</button>
                             <a href="#" class="btn btn-secondary btn-sm disabled" aria-disabled="true">No disponible</a>
                         </div>
-                    </div>
+                    </article>
                     <div class="modal fade" id="modal-mail01" tabindex="-1" aria-labelledby="modal-mail01-titulo"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
@@ -432,13 +437,14 @@
             </div>
         </section>
 
-    </div>
+    </main>
 
     <footer>
         <p>&copy;NexusTI 2026</p>
         <p class="aviso-legal">Construido con <a href="https://getbootstrap.com/" target="_blank"
                 rel="noopener">Bootstrap</a>, software de código abierto bajo licencia <a
                 href="https://opensource.org/license/mit" target="_blank" rel="noopener">MIT</a>.</p>
+        <p class="aviso-legal">Tipografía: Inter, bajo licencia SIL Open Font.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
